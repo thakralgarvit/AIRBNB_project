@@ -3,11 +3,11 @@ const categoryIcons = require("../utils/categoryIcons.js");
 
 module.exports.index = async (req, res) => {
   const allListing = await Listing.find({});
-    res.render("./listing/index.ejs", { allListing, categoryIcons });
+    res.render("./Listing/index.ejs", { allListing, categoryIcons });
 };
 
 module.exports.newList = (req, res) => {
-  res.render("./listing/new.ejs");
+  res.render("./Listing/new.ejs");
 };
 
 module.exports.showAll = async (req, res) => {
@@ -19,7 +19,7 @@ module.exports.showAll = async (req, res) => {
     req.flash("error", "listing does not exist");
     res.redirect("/listing");
   }
-  res.render("./listing/show.ejs", { listing });
+  res.render("./Listing/show.ejs", { listing });
 };
 
 module.exports.creatList = async (req, res) => {
@@ -50,7 +50,7 @@ module.exports.editlist = async (req, res) => {
   } else {
     let oglistingImgUrl = listing.image.url;
     oglistingImgUrl = oglistingImgUrl.replace("/upload", "/upload/w_300")
-    res.render("./listing/edit.ejs", { oglistingImgUrl });
+    res.render("./Listing/edit.ejs", { oglistingImgUrl });
   }
 };
 

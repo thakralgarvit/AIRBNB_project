@@ -92,7 +92,7 @@ app.all("*", (req, res, next) => {
 
 app.use((err, req, res, next) => {
   let { statusCode = 500, message = "something went wrong" } = err;
-  res.status(statusCode).render("listing/error.ejs", { err });
+  res.status(statusCode).render("Listing/error.ejs", { err });
 });
 
 app.listen(8080, () => {
