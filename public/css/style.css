@@ -1,0 +1,207 @@
+body {
+  font-family: "Plus Jakarta Sans", serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-plane-departure {
+  color: #fe424d;
+  font-size: 2rem;
+}
+.icon {
+  color: #fe424d !important;
+  font-size: 2rem !important;
+}
+
+/* Footer */
+
+.f-info-links a {
+  text-decoration: none;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info {
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-evenly;
+}
+.f-info-links,
+.f-info-social,
+.f-info-brand {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-social i {
+  font-size: 1.5rem;
+  margin-right: 0.7rem;
+}
+
+/* cards */
+.card {
+  margin-bottom: 2rem;
+  border: none !important;
+}
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+  height: 20rem !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.listingLink {
+  color: black !important;
+}
+
+.card-text p {
+  font-weight: 400 !important ;
+}
+.card-text-p {
+  opacity: 80%;
+}
+.card-text-p:hover {
+  opacity: 100%;
+}
+
+.listingLink {
+  text-decoration: none !important;
+}
+
+/* card effect */
+.card-img-overlay {
+  opacity: 0%;
+  transition: 0.5s ease;
+}
+.card-img-overlay:hover {
+  opacity: 20%;
+  background-color: white;
+}
+
+.add-btn {
+  background-color: #fe424d !important;
+  color: white !important;
+}
+
+.linebtn {
+  display: flex;
+}
+
+.padbtn {
+  margin-right: 10px;
+}
+
+.shado {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  background-color: #fff;
+}
+
+.shado:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+}
+
+.signupp {
+  color: #fe424d;
+}
+
+/* filter */
+
+#filters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter {
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-top: 1rem;
+  opacity: 0.5;
+}
+
+.filter:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.filter p {
+  font-size: 0.8rem;
+}
+
+.icoo {
+  font-size: 1.5rem;
+}
+
+.sign {
+  padding-right: 140px !important;
+}
+
+.active {
+  opacity: 1 !important;
+  scale: 1.1;
+}
+
+.tax-toggle {
+  border: 2px solid black;
+  border-radius: 1rem;
+  height: 3.5rem;
+  padding: 0.9rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  background-color: #fe424d !important;
+  color: white !important;
+  border-radius: 50% !important;
+  height: auto;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.search-btn p {
+  display: none !important;
+  margin: 0 !important;
+}
+
+.search-btn:hover {
+  border-radius: 1rem !important;
+}
+
+.search-btn:hover p {
+  display: block !important;
+}
+
+.search-btn i {
+  /* Ensure icon stays centered */
+  display: flex !important;
+  align-items: center;
+}
+
+.input-btn {
+  border-radius: 25px !important;
+}
